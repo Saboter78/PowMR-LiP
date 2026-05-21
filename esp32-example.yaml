@@ -968,6 +968,8 @@ text_sensor:
         if (!values.empty()) {
           values.pop_back();
         }
+      } else {
+        values = "OK"; // Повертає OK, якщо маска дорівнює 0 (немає помилок)
       }
       return values;
 
